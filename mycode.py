@@ -14,6 +14,10 @@ df = pd.DataFrame(data)
 new_data = {'Name' : 'saif', 'Age' : 22, 'Address': 'Lucknow'}
 df.loc[len(df)] = new_data
 
+# Add another new line in the existing dataframe
+new_data_2 = {'Name': 'Ankit','Age':23,'Address':'Delhi'}
+df.loc[len(df)] = new_data_2
+
 # creating a directory at the root level of the project
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
